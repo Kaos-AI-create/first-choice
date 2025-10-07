@@ -1,12 +1,5 @@
 
 [build]
+  base    = "first-choice-netlify-FIXED/client"
   command = "npm run build"
   publish = "dist"
-
-[[redirects]]
-  from = "/*"
-  to = "/index.html"
-  status = 200
-
-[build.environment]
-  NODE_VERSION = "20"
